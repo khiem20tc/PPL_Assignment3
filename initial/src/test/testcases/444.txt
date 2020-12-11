@@ -1,0 +1,5 @@
+Var: a,b,c;
+        Function: c
+        Body:
+        EndBody.
+        

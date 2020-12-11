@@ -1,0 +1,6 @@
+
+        Var: a[1][1]={1,"str",3.2};
+        Function: main
+        Body:
+        EndBody.
+        

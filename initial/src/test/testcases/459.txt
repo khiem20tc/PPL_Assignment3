@@ -1,0 +1,8 @@
+
+        Function: main
+        Body:
+        Var: a;
+        If a+1 Then a=False;
+        EndIf.
+        EndBody.
+        

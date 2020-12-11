@@ -1,0 +1,16 @@
+
+        Var: b=False;
+        Var: c;
+        
+        Function: foo
+        Body:
+        b = True;
+        EndBody.
+        
+        Function: main
+        Body:
+        Var: c;
+        c = !b;
+        EndBody.
+
+        

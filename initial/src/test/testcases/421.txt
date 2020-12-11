@@ -1,0 +1,8 @@
+
+        Function: main
+        Body:
+        Var: x=3;
+        If x>1 Then x=x-1;
+        EndIf.
+        EndBody.
+        

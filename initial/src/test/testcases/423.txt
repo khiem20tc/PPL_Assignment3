@@ -1,0 +1,9 @@
+
+        Function: main
+        Body:
+        Var: x=0, i=1;
+        For (i=1, i<10, **test comment** 1) Do
+            x=2+1;                                                                                        
+        EndFor.
+        EndBody.
+        

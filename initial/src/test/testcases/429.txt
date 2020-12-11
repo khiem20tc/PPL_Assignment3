@@ -1,0 +1,7 @@
+
+        Var: a,b=1,c,d;
+        Function: main
+        Body:
+        a = b+(c+d);
+        EndBody.
+        

@@ -1,0 +1,7 @@
+
+        Var: l,k=0.1,m="string";
+        Function: main
+        Body:
+        l=k;
+        EndBody.
+        

@@ -1,0 +1,10 @@
+
+        Function: main
+        Parameter: a,x,y
+        Body:
+        Var: k,l;
+        k=2;
+        l="string";
+        k=l;
+        EndBody. 
+        

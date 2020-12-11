@@ -1,0 +1,11 @@
+Var: a,b;
+        Function: hi
+        Parameter: a,y
+        Body:
+        Var: x;
+        EndBody.
+        Function: hi
+        Body:
+        Var: k;
+        EndBody.
+        
