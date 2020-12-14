@@ -1,0 +1,12 @@
+Function: main
+        Parameter: n
+        Body:
+        Var:factorial=1;
+        print("Enter integer: ");
+        read();
+        For (i=0, i<=n, 1) Do
+            factorial=factorial*i;
+        EndFor.
+        printStrLn(string_of_int(factorial));
+        Return factorial;
+        EndBody.

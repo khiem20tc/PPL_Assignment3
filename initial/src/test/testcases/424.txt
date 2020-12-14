@@ -3,7 +3,7 @@
         Body:
         Var: x=0, i;
         For (i=1, i+2, **test comment** 1) Do
-            Break;                                                                                     
+            Break;
         EndFor.
         EndBody.
         

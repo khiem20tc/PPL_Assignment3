@@ -1,0 +1,16 @@
+** this is a comment **
+        Var: a[2] = {True,{2,3}}, str = "string";
+        Function: func
+        Body:
+            If (a + 5) && (j-6) || (k*7) Then
+                ** this is another comment **
+                a[i] = b +. 1.0;
+                b = i - b * a -. b \ c - -.d;
+            EndIf.
+            Return a+func();
+        EndBody.
+        Function: main
+        Body:
+            func();
+            Return 0;
+        EndBody.

@@ -6,5 +6,5 @@
         k=2;
         l="string";
         k=l;
-        EndBody. 
+        EndBody.
         

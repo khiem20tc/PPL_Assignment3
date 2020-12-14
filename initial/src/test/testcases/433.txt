@@ -6,6 +6,6 @@
         EndBody.
         Function: main
         Body:
-        x(1,2);
+        m(1,2);
         EndBody.
         

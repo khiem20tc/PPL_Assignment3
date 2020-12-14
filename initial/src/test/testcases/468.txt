@@ -1,0 +1,13 @@
+
+            Function: main
+            Body:
+                Var: a , b = 1;
+                If b==1 Then
+                a = a +. 0.5;
+                ElseIf b!=1 Then
+                a = True;
+                EndIf.
+                a = a - 1;
+            EndBody.
+
+        

@@ -1,0 +1,9 @@
+Function: main
+                    Parameter: x
+                    Body:
+                    Var: i, result;
+                        For (i = 1, i <= x*x*x,i + x ) Do
+                            result = i * i + i \ --1 % i--i;
+                        EndFor.
+                        Return result;
+                    EndBody.

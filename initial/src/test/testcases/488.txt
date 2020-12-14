@@ -1,0 +1,8 @@
+Function: main 
+        Body:
+            If n == 0 Then
+                x = 3;
+            ElseIf x != 2 Then
+                check = False;
+            EndIf.
+        EndBody.

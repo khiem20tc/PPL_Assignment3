@@ -1,8 +1,15 @@
-Var: a,c;
-        Function: main
-        Parameter: a,x,y
-        Body:
-        Var: k,b;
-        Var: a,b;
-        EndBody.
+
+            Function: main
+            Body:
+                Var: result;
+                While(result == 1) Do
+                    result = result -1;
+                EndWhile.
+                result = this_is_function();
+            EndBody.
+            Function: this_is_function
+            Body:
+                Var: string = "This is string";
+                Return string;
+            EndBody.
         

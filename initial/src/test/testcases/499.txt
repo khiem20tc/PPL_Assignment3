@@ -1,0 +1,24 @@
+ 
+            Function: main 
+            Body:
+                Var: x, y[1][3]={{{12,1}, {12., 12e3}},{23}, {13,32}};
+                Var: b = True, c = False,i;
+                For (i = 0, i < 10, 2) Do
+                    For (i = 1, i < x*x , i + 1 ) Do
+                    Var: a,z;
+                    Var:j;
+                        If(z && False) Then
+                            Break;
+                        ElseIf 1 Then
+                            a=a-1;
+                        EndIf.
+                        For( j = 1, j < x*x ,j + 1) Do
+                            Do
+                                a = a * 1;
+                            While( 1 ) 
+                            EndDo.
+                        EndFor.
+                    EndFor.
+                EndFor.
+            EndBody.
+            

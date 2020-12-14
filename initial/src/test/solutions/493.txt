@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(i),IntLiteral(0),BinaryOp(<,Id(i),CallExpr(Id(sqrt),[Id(n)])),IntLiteral(2),[],[Assign(Id(x),BinaryOp(+,Id(i),Id(n)))])

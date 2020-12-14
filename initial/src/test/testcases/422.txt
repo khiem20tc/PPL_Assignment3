@@ -4,6 +4,6 @@
         Var: x=3,a=1;
         If a+2 Then
         x=x+1;
-        EndIf. 
+        EndIf.
         EndBody.
         

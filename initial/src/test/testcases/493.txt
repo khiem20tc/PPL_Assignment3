@@ -1,0 +1,18 @@
+
+            Function: sqrt
+            Parameter: x
+            Body:
+                Var: i;
+            While (i*i) < x Do
+                    i = i - -1;
+                EndWhile.
+                Return i-1;
+            EndBody.
+            Function: main
+            Parameter: n,x
+            Body:
+                Var: i;
+                For (i = 0, i < sqrt(n), 2) Do
+                    x = i + n;
+                EndFor.
+            EndBody.

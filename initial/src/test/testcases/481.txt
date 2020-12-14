@@ -1,0 +1,10 @@
+Function: main
+        Body:
+            Do
+                While(1) Do
+                foo (2 + x, 4. \. y);
+                goo ();
+            EndWhile.
+            While(1)
+            EndDo.
+        EndBody.

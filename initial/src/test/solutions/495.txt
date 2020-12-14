@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(i),IntLiteral(100),BooleanLiteral(true),BinaryOp(-,Id(i),IntLiteral(1)),[],[If(BinaryOp(<,UnaryOp(-,Id(a)),UnaryOp(-,IntLiteral(3))),[],[Break()])Else([],[]),Assign(Id(a),BinaryOp(-,Id(a),IntLiteral(1)))])

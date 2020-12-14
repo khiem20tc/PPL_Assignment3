@@ -9,4 +9,8 @@
         Var: a,b=3;
         a = -foo(2) + b;
         EndBody.
+        Function: go
+        Parameter: m,n
+        Body:
+        EndBody.
         

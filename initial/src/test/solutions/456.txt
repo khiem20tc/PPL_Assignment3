@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(foo),[Id(y)])
+Type Cannot Be Inferred: CallExpr(Id(foo),[Id(y)])

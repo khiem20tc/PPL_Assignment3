@@ -1,0 +1,5 @@
+Function: main
+            Parameter: a,b
+            Body:
+                a[10e2] = (foo(x) +. 12.e3) *. 0x123 - a[b[2][3]] + 4;
+            EndBody. 

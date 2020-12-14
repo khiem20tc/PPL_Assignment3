@@ -1,0 +1,9 @@
+
+        Function: main
+        Body:
+            foo()[0] = 1;
+        EndBody.
+
+        Function: foo
+        Body:
+        EndBody.

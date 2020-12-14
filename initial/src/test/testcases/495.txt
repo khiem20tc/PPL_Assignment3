@@ -1,0 +1,13 @@
+Function: main 
+        Body:
+        Var:x;
+            While x>1 Do
+            Var: i,a = 4;
+                For (i = 100,True, i-1) Do
+                    If -a<-3 Then
+                        Break;
+                    EndIf.
+                    a = a -1;
+                EndFor.
+            EndWhile.
+        EndBody.

@@ -1,0 +1,6 @@
+
+            Var: a[3] = {1,2,3};
+            Funtion: main
+            Body:
+            EndBody.
+        

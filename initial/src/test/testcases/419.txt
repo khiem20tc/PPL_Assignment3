@@ -2,6 +2,6 @@
         Function: main
         Body:
         Var: a;
-        a = -True; 
+        a = -True;
         EndBody.
         

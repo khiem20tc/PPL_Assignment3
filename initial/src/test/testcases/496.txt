@@ -1,0 +1,13 @@
+
+        Function: main
+        Parameter: a[123], b, c[13][14][15]
+        Body:
+        Var: y;
+            If a[12] > b Then
+                Var: x;
+                Do
+                    a = b + 3; 
+                    c[2][3] = int_of_float(c[4][2]+.10.2*.main(a,b,c))+a[2+int_of_float(main({2},a[3],a))+int_of_float(c[4])]; 
+                While (x == y)  EndDo.
+            EndIf.
+        EndBody.

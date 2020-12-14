@@ -4,10 +4,11 @@
         Body:
         Var: b = 1;
         b = y;
+        Return;
         EndBody.
         Function: main
         Body:
         Var: x;
-        x = foo("str");
+        x = foo("string");
         EndBody.
         

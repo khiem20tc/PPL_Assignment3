@@ -1,0 +1,13 @@
+Function: main
+        Body:
+            m = test2(a,b) + main (x);
+        EndBody.
+        Function: test2
+        Body:
+            Do
+                If(z == 1) Then
+                    x = !a;
+                EndIf.
+            While x
+            EndDo.
+        EndBody.
