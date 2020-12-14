@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(Id(x),IntLiteral(1),BinaryOp(==,Id(x),CallExpr(Id(foo),[])),IntLiteral(1),[],[While(BinaryOp(==,Id(x),IntLiteral(2)),[VarDecl(Id(z))],[Assign(Id(x),CallExpr(Id(foo),[])),Dowhile([],[Assign(Id(z),CallExpr(Id(goo),[]))],BinaryOp(<=,Id(z),IntLiteral(1)))])])
+Type Mismatch In Statement: Assign(Id(z),CallExpr(Id(goo),[]))

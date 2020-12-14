@@ -535,15 +535,24 @@ Symbol("printStrLn",MType([StringType()],VoidType()))]
         return o
     
     def visitFor(self, ast, o):
-        if not(type(self.visit(ast.idx1,o))==IntType and type(self.visit(ast.expr1,o))==IntType and type(self.visit(ast.expr3,o))==IntType and type(self.visit(ast.expr2,o))==BoolType):
-            raise TypeMismatchInStatement(ast) 
         new_outer = o[1]
         for x in o[0]:
             new_outer.append(x)
         new_envv = ([], new_outer, o[2])
-        self.visit(ast.expr1, new_envv)
-        self.visit(ast.expr2, new_envv)
-        self.visit(ast.expr3, new_envv)
+        type_idx1 = self.visit(ast.idx1,new_envv)
+        type_expr1 = self.visit(ast.expr1, new_envv)
+        type_expr2 = self.visit(ast.expr2, new_envv)
+        type_expr3 = self.visit(ast.expr3, new_envv)
+        if type(type_idx1) == Unknown:
+            type_idx1 = IntType()
+        if type(type_expr1) == Unknown:
+            type_expr1 = IntType()
+        if type(type_expr2) == Unknown:
+            type_expr2 = BoolType()
+        if type(type_expr3) == Unknown:
+            type_expr3 = IntType()
+        if not(type(type_idx1)==IntType and type(type_expr1)==IntType and type(type_expr3)==IntType and type(type_expr2)==BoolType):
+            raise TypeMismatchInStatement(ast) 
         for i in range(len(ast.loop[0])):
             self.visit(ast.loop[0][i],new_envv)
         for i in range(len(ast.loop[1])):
