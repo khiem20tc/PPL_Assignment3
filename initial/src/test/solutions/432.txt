@@ -1,1 +1,1 @@
-Undeclared Function: fo
+Type Mismatch In Statement: For(Id(x),IntLiteral(1),BinaryOp(==,Id(x),CallExpr(Id(foo),[])),IntLiteral(1),[VarDecl(Id(y),IntLiteral(1))],[If(BinaryOp(==,Id(x),IntLiteral(1)),[],[Assign(Id(x),IntLiteral(2))])ElseIf(BinaryOp(==,Id(x),IntLiteral(2)),[],[Assign(Id(y),FloatLiteral(1.1))])Else([],[])])

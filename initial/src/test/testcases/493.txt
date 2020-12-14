@@ -1,18 +1,12 @@
 
-            Function: sqrt
-            Parameter: x
-            Body:
-                Var: i;
-            While (i*i) < x Do
-                    i = i - -1;
-                EndWhile.
-                Return i-1;
-            EndBody.
-            Function: main
-            Parameter: n,x
-            Body:
-                Var: i;
-                For (i = 0, i < sqrt(n), 2) Do
-                    x = i + n;
-                EndFor.
-            EndBody.
+        Var: abc[12][22][33][44][55];
+        Function: main
+        Parameter: max
+        Body:
+            Var: x;
+            max = 1;
+            x = main(abc[main(23)][main(33)][main(44)][main(55)][main(x)]);
+            x = 2.0;
+            Return 0;
+        EndBody.
+        

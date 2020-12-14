@@ -1,6 +1,12 @@
 
-        Var: a[1][1]={1,"str",3.2};
         Function: main
         Body:
+            Var: x = 1;
+            For(x = foo() , x < 1 , 1) Do
+            EndFor.
+        EndBody.
+        Function: foo
+        Body:
+            Return 1.1;
         EndBody.
         

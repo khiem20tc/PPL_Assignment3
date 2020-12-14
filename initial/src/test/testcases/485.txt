@@ -1,20 +1,17 @@
-Function: main
-        Parameter: octalNumber
+
+        Var: x;
+        Function: fact
+        Parameter: n
         Body:
-        Var: decimalNumber = 0, i = 0, rem;
-        While (octalNumber != 0) Do
-            rem = octalNumber % 10;
-            octalNumber =octalNumber \ 10;
-            decimalNumber =decimalNumber  + rem * pow(8,i);
-            i=i+1;
-        EndWhile.
-    Return decimalNumber;
-    EndBody.
-    Function: pow
-    Parameter: x,y
-    Body:
-    If x == 0 Then
-    Return 1;
-    EndIf.
-    Return x * pow(x-1,y);
-    EndBody.
+            If n == 0 Then
+                Return 1;
+            Else
+                Return n * fact (n - 1);
+            EndIf.
+        EndBody.
+        Function: main
+        Body:
+            x = 10;
+            fact(x);
+        EndBody.
+        

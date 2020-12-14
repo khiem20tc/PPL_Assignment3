@@ -1,1 +1,1 @@
-Undeclared Function: m
+Type Mismatch In Statement: For(Id(i),IntLiteral(2),BinaryOp(<,Id(i),Id(x)),Id(x),[VarDecl(Id(z),FloatLiteral(1.1))],[For(Id(i),IntLiteral(3),BinaryOp(<,Id(i),IntLiteral(10)),Id(i),[],[Assign(Id(z),BinaryOp(+.,FloatLiteral(1.2),FloatLiteral(1.0))),For(Id(i),IntLiteral(4),BinaryOp(<,Id(i),IntLiteral(100)),BinaryOp(+,Id(i),IntLiteral(1)),[],[Assign(Id(z),BooleanLiteral(true)),If(BinaryOp(==,Id(x),IntLiteral(1)),[],[Assign(Id(i),Id(x))])Else([],[Assign(Id(i),UnaryOp(-,Id(x)))])])])])

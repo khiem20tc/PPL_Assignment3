@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(+,IntLiteral(2),BooleanLiteral(true))
+Type Mismatch In Statement: If(IntLiteral(2),[],[Assign(Id(x),IntLiteral(1))])Else([],[])

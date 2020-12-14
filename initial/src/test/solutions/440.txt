@@ -1,1 +1,1 @@
-Redeclared Variable: b
+Type Mismatch In Statement: Assign(Id(x),StringLiteral(This is String))

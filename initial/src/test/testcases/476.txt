@@ -1,6 +1,13 @@
-Function: main
-        Body:
-            Var: a[12] = { 5 };
-            Var: x[45]={{{{{5}}}}};
 
+        Function: foo
+        Parameter: e[1], f
+        Body:
+            e[0] = True;
         EndBody.
+        Function: main
+        Parameter: x
+        Body:
+            x = foo({3}, True);
+            Return 0;
+        EndBody.
+                   

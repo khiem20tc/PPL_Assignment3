@@ -1,9 +1,14 @@
 
         Function: main
         Body:
-        Var: x=3,a=1;
-        If a+2 Then
-        x=x+1;
-        EndIf.
+            Var: a = 2,x = 3 , y , meow_meow;
+            Var: z[5] = {1,2,3,4,5};
+            If(a == 2) Then
+                If(x == 3) Then
+                    y = 1;
+                Else y = 2;
+                EndIf.
+            Else x[1] = meow_meow;
+            EndIf.
         EndBody.
         

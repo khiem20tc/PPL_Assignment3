@@ -1,11 +1,15 @@
-Function: main
-        Parameter: a[5], b
+
+        Var: x[2][3][4], y[22];
+        Function: foo
+        Parameter: s1, s2
         Body:
-        Var: x[2][3] = {{1,2,3},{2,3,3}};
-        Var: i = 0;
-        While (i < 5) Do
-        If i == 3 ThenReturn 1;EndIf.
-        i = i + 1;
-        EndWhile.
-        Return x[1][1];
+            Var: x;
+            x = s1 + s2 + foo(s1, s2);
+            Return x;
         EndBody.
+        Function: main
+        Body:
+            main();
+            foo()[10] = 2;
+            Return;
+        EndBody. 

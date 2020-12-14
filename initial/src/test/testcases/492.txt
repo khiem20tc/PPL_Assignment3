@@ -1,9 +1,23 @@
-Function: main
-                    Parameter: x
-                    Body:
-                    Var: i, result;
-                        For (i = 1, i <= x*x*x,i + x ) Do
-                            result = i * i + i \ --1 % i--i;
-                        EndFor.
-                        Return result;
-                    EndBody.
+
+        Var: x, y;
+        Function: main
+        Body:
+            Var: i = 20, a, b, c;
+            If i == 10 Then 
+                a = 1;
+                b = 2;
+                c = a + b;
+                x = c;
+            ElseIf i == 15 Then
+                a = 3;
+                b = 4;
+                c = b - a;
+            ElseIf i == 20 Then
+                a = 2;
+                b = 2;
+                c = a*2 + b*3;
+            EndIf.
+            y = (x+a)*(x+b)*(x+.2.);
+            Return 0;
+        EndBody.
+        

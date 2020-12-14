@@ -1,1 +1,1 @@
-Type Mismatch In Statement: CallStmt(Id(foo),[IntLiteral(1),IntLiteral(2)])
+Type Mismatch In Statement: Assign(ArrayCell(Id(result),[IntLiteral(1)]),Id(x))

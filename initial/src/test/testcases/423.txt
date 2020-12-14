@@ -1,9 +1,25 @@
 
-        Function: main
-        Body:
-        Var: x=0, i=1;
-        For (i=1, i<10, **test comment** 1) Do
-            x=2+1;
-        EndFor.
-        EndBody.
+            Function: foo
+            Body:
+                Return 1;
+            EndBody.
+
+            Function: goo
+            Body:
+                Return {1.1,2.2,3.3,4.4,5.5};
+            EndBody.
+
+            Function: main
+            Body:
+                Var: x = 1, y , z , t;
+                If (x > foo()) Then
+                    y = 2;
+                Else
+                    If (x <= foo()) Then
+                        y = z;
+                    Else
+                        z = goo()[1];
+                    EndIf.
+                EndIf.
+            EndBody.
         

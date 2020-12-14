@@ -1,13 +1,11 @@
-Function: main
-        Body:
-            m = test2(a,b) + main (x);
+
+        Function: main 
+        Parameter: s1, s2, s3
+        Body: 
+            Return 1 + main(s1 + 1, s2 \. 2.0, s3 + s1);
         EndBody.
-        Function: test2
-        Body:
-            Do
-                If(z == 1) Then
-                    x = !a;
-                EndIf.
-            While x
-            EndDo.
+        Function: foo
+        Body: 
+            main(2, 2.0, 3);
         EndBody.
+        

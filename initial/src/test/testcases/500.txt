@@ -1,17 +1,4 @@
- 
-            Var: b;
-                Function: main
-                Body:
-                    Var: a = 5,x;
-                    a = a + foo(x);
-                    b = 5.2;
-                    Return 3;
-                EndBody.
-
-                Function: foo
-                Parameter: a
-                Body:
-                    Var: c = 5;
-                    Return c;
-                EndBody.
-            
+Function: main  
+                   Body:
+                        printStrLn();
+                    EndBody.

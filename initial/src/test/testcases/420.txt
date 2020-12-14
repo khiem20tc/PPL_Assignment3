@@ -1,7 +1,11 @@
 
         Function: main
+        Parameter: x,y
         Body:
-        Var: a;
-        a = 2+True;
+            Var: a = 2;
+            If(2) Then
+                x = 1;
+            EndIf.
+            x = 1.1;
         EndBody.
         

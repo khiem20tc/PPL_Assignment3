@@ -1,1 +1,1 @@
-Undeclared Identifier: m
+Type Mismatch In Statement: CallStmt(Id(main),[IntLiteral(2),FloatLiteral(2.0),IntLiteral(3)])

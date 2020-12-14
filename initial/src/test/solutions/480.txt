@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(&&,BinaryOp(||,UnaryOp(!,BinaryOp(&&,Id(b),Id(c))),UnaryOp(!,BinaryOp(&&,Id(a),Id(b)))),BinaryOp(+,Id(i),IntLiteral(1)))
+Undeclared Function: float_to_int

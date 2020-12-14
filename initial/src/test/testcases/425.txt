@@ -1,8 +1,12 @@
 
-        Var: a,b,c;
-        Function: main
-        Body:
-        Var: x,y;
-        Return;
-        EndBody.
+            Function: main
+            Body:
+                If (foo()) Then
+                EndIf.
+            EndBody.
+
+            Function: foo
+            Body:
+                Return 1;
+            EndBody.
         

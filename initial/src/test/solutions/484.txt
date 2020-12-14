@@ -1,1 +1,1 @@
-Undeclared Function: print
+Type Cannot Be Inferred: CallExpr(Id(foo),[Id(s1),Id(s2)])

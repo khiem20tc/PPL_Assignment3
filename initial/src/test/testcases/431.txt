@@ -1,7 +1,16 @@
 
-        Var: x,y;
         Function: main
-        Parameter: a,b,c
         Body:
+            Var:x = 1.1 , y , z;
+            For (y = 1, y > (1+2+3) , 4 ) Do
+                Var: x = 1;
+                z = x;
+                y = y + 1;
+            EndFor.
+            z = 1.2;
+        EndBody.
+        Function: foo
+        Body:
+            Return 1.1;
         EndBody.
         

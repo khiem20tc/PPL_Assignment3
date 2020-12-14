@@ -429,7 +429,6 @@ Symbol("printStrLn",MType([StringType()],VoidType()))]
                     for i in range(len(obj.param)):
                         if (type(obj.param[i]) != Unknown and type(args[i])==Unknown):
                             args[i] = obj.param[i]
-                            #o[2][-1].param[i] = obj.param[i]
                         if (type(obj.param[i]) == Unknown and type(args[i])!=Unknown):
                             obj.param[i] = args[i]
                         if (type(obj.param[i]) == Unknown or obj.type == Unknown):
@@ -491,33 +490,30 @@ Symbol("printStrLn",MType([StringType()],VoidType()))]
             for obj in o[0]: 
                 if (left_name == obj.name):
                     obj.type = self.visit(ast.rhs,o)
+                    left_type = self.visit(ast.rhs,o)
                     flag = 1;
             if flag == 0:        
                 for obj in o[1]: 
                     if (left_name == obj.name):
                         obj.type = self.visit(ast.rhs,o)
+                        left_type = self.visit(ast.rhs,o)
         elif type(self.visit(ast.rhs,o)) == Unknown and type(self.visit(ast.lhs,o)) != Unknown:
             flag = 0;
-            # for obj in o[0]: 
-            #     if (ast.lhs.name == obj.name):
-            #         obj.type = self.visit(ast.rhs,o)
-            #         flag = 1;
-            # if flag == 0:        
-            #     for obj in o[1]: 
-            #         if (ast.lhs.name == obj.name):
-            #             obj.type = self.visit(ast.rhs,o)
             for obj in o[0]: 
                 if (right_name == obj.name):
                     obj.type = self.visit(ast.lhs,o)
+                    right_type = self.visit(ast.lhs,o)
                     flag = 1;
             if flag == 0:        
                 for obj in o[1]: 
                     if (right_name == obj.name):
                         obj.type = self.visit(ast.lhs,o)
-        if (type(self.visit(ast.lhs,o)) != type(self.visit(ast.rhs,o))):
-            raise TypeMismatchInStatement(ast) 
-        if (type(self.visit(ast.lhs,o)) == type(self.visit(ast.rhs,o))) and (type(self.visit(ast.lhs,o)) == VoidType):
-            raise TypeMismatchInStatement(ast) 
+                        right_type = self.visit(ast.lhs,o)
+        if type(right_type) != Unknown and type(left_type) != Unknown:
+            if type(left_type) != type(right_type):
+                raise TypeMismatchInStatement(ast) 
+            if (type(left_type) == type(right_type) and (type(left_type)) == VoidType):
+                raise TypeMismatchInStatement(ast) 
         return o
     
     def visitIf(self, ast, o):

@@ -1,7 +1,17 @@
-Function: main
-            Parameter: a,b
-            Body:
-                a = "string 1";
-                b = "string 2";
-                Return a+b;
-            EndBody. 
+
+        Function: main
+        Body:
+            printLn();
+            print("Ass3");
+            If True Then
+                Var: print = 0;
+            Else
+                print("ass3");
+            EndIf.
+            While bool_of_string("ass3") Do
+                Var: print;
+                print("ass3");
+            EndWhile.
+            Return 0;
+        EndBody.
+        

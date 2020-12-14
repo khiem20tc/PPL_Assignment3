@@ -1,7 +1,13 @@
 
+        Function: foo
+        Body:
+            Return {1,2,3};
+        EndBody.
+
         Function: main
         Body:
-        Var: a;
-        a = -True;
+            Var: x[3],y;
+            x = foo();
+            y = x[1] +. 1.1;
         EndBody.
         

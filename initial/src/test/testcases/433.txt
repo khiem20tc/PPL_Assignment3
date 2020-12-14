@@ -1,11 +1,20 @@
 
-        Var: x,y;
-        Function: foo
-        Parameter: x,y
-        Body:
-        EndBody.
-        Function: main
-        Body:
-        m(1,2);
-        EndBody.
+            Function: main
+            Body:
+                Var: x = 1,i;
+                For(i=2, i < x ,x) Do
+                    Var: z = 1.1;
+                    For(i=3,i<10,i) Do
+                        z= 1.2 +. 1.0;
+                        For(i=4,i<100,i+1) Do
+                            z = True;
+                            If x == 1 Then
+                                i = x;
+                            Else
+                                i = -x;
+                            EndIf.
+                        EndFor.
+                    EndFor.
+                EndFor.
+            EndBody.
         

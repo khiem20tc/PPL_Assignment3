@@ -1,5 +1,12 @@
-Function: main
-            Parameter: a,b
-            Body:
-                a[10e2] = (foo(x) +. 12.e3) *. 0x123 - a[b[2][3]] + 4;
-            EndBody. 
+
+        Var: a[2][2] = {{3,4},{1,2}};
+        Function: main
+        Body:
+            a = foo();
+            Return int_of_float(float_to_int(foo()[1][1]));
+        EndBody.
+        Function: foo
+        Body:
+            Return;
+        EndBody.
+        

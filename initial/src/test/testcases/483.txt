@@ -1,12 +1,24 @@
-Function: main
-        Parameter: n
+
+        Var: x[2][3];
+        Function: foo
+        Parameter: s1, s2
         Body:
-        Var:factorial=1;
-        print("Enter integer: ");
-        read();
-        For (i=0, i<=n, 1) Do
-            factorial=factorial*i;
-        EndFor.
-        printStrLn(string_of_int(factorial));
-        Return factorial;
+            x[1][1] = True;
+            Return x;
         EndBody.
+        Function: main
+        Parameter: x1, x2
+        Body:
+            While foo(1,2)[1][2] Do
+                Var: x;
+                main(1, foo(4,5)[1][1]);
+                For (x = x1, x2, 2) Do
+                    Var: x;
+                    x = 1.2453;
+                    If foo(4,5)[1][1] && foo(1,2)[1][2] Then
+                        print(string_of_float(x));
+                    EndIf.
+                EndFor.
+            EndWhile.
+            Return foo(4,5);
+        EndBody. 

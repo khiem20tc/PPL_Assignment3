@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(Id(i),IntLiteral(1),BinaryOp(<=,Id(i),BinaryOp(*,BinaryOp(*,Id(x),Id(x)),Id(x))),BinaryOp(+,Id(i),Id(x)),[],[Assign(Id(result),BinaryOp(-,BinaryOp(+,BinaryOp(*,Id(i),Id(i)),BinaryOp(%,BinaryOp(\,Id(i),UnaryOp(-,UnaryOp(-,IntLiteral(1)))),Id(i))),UnaryOp(-,Id(i))))])
+Type Mismatch In Expression: BinaryOp(+.,Id(x),FloatLiteral(2.0))

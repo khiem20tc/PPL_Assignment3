@@ -1,7 +1,15 @@
 
-        Var: l,k=0.1,m="string";
-        Function: main
-        Body:
-        l=k;
-        EndBody.
+            Function: foo
+            Body:
+                Return 1;
+            EndBody.
+            Function: main
+            Body:
+                
+                Var: x,y,z,t;
+                t = -1;
+                x = 1.1;
+                y = foo();
+                z = x + y;
+            EndBody.
         

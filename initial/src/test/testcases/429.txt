@@ -1,7 +1,11 @@
 
-        Var: a,b=1,c,d;
         Function: main
+        Parameter: x
         Body:
-        a = b+(c+d);
+            Var: y , z;
+            If(x) Then
+                y = 1;
+            EndIf.
+            x = 1;
         EndBody.
         

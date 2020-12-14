@@ -1,18 +1,13 @@
-Var: a = 5;
 
-        Function: main
-        Parameter: a
+        Var: main;
+        Function: foo
         Body:
-        Var:b[2];
-            If bool_of_string ("True") Then
-                a = int_of_string (read ());
-                b = float_of_int (a) +. 2.0;
-            ElseIf a == 5 Then
-                a = a + main(123);
-            ElseIf a == 6 Then
-                a = a * 2;
-                Return string_of_int(a);
-                Break;
-            Else Continue;
+            Var: num = 10;
+            If num > 0 Then print("Positive number");
+            Else 
+                If num == 0 Then print("Zero");
+                Else print("Negative number");
+                EndIf.
             EndIf.
         EndBody.
+        

@@ -1,13 +1,29 @@
 
-        Var: a;
-        Function: foo
-        Parameter: x,y,z
-        Body:
-        Var: b;
-        EndBody.
-        Function: main
-        Body:
-        Var: c;
-        foo(1,2);
-        EndBody.
+            Function: swap
+            Parameter: x , y
+            Body:
+                Var: z = 1,result[2];
+                z = x;
+                x = y;
+                y = z;
+                result[0] = y;
+                result[1] = x;
+                Return result;
+            EndBody.
+            Function: main
+            Body:
+                Var: i;
+                For(i = 1, i < 10 , 1) Do
+                    Var: b,c;
+                    If i == 1 Then
+                        Var: a[2];
+                        a = swap(i,i+1);
+                        b = a[0];
+                        c = a[1];
+                    EndIf.
+                    b = "Hello Darkness my old friend";
+                    **b = 1.1;**
+                EndFor.
+
+            EndBody.
         

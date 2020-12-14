@@ -1,8 +1,12 @@
-Function: main 
+
+        Function: main **1 + 2 + ... n < max**
+        Parameter: max
         Body:
-            If n == 0 Then
-                x = 3;
-            ElseIf x != 2 Then
-                check = False;
-            EndIf.
+            Var: n = 0, s = 0;
+            Do 
+                n = n + 1;
+                s = s + n;
+            While s + n + 1 < max EndDo.
+            writeln(n);
         EndBody.
+        

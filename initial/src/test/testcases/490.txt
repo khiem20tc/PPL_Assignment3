@@ -1,16 +1,11 @@
-** this is a comment **
-        Var: a[2] = {True,{2,3}}, str = "string";
-        Function: func
-        Body:
-            If (a + 5) && (j-6) || (k*7) Then
-                ** this is another comment **
-                a[i] = b +. 1.0;
-                b = i - b * a -. b \ c - -.d;
-            EndIf.
-            Return a+func();
-        EndBody.
+
+        Var: abc[2][2][3];
         Function: main
         Body:
-            func();
-            Return 0;
+            Var: athos = 500, pothos = 900, jerry, tom = 200;
+            If (pothos - athos) < 400 Then jerry = pothos - tom;
+            Else jerry = athos - tom;
+            EndIf.
+            Return abc;
         EndBody.
+        

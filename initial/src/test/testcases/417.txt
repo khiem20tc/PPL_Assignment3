@@ -1,9 +1,13 @@
 
-        Function: main
-        Parameter: a,x,y
-        Body:
-        Var: k,l;
-        k=0.1;
-        l=k;
-        EndBody.
+            Function: foo
+            Body:
+                Var: a[5];
+                a  = {1,2,3,4,5};
+                Return a;
+            EndBody.
+            Function: main
+            Body:
+                Var: x;
+                x = foo()[1][2];
+            EndBody.
         

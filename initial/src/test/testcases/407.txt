@@ -1,7 +1,15 @@
-Var: a,c;
-        Function: main
-        Parameter: a,x,y
-        Body:
-        a=c;
-        EndBody.
+
+            Function: foo1
+            Body:
+                Return 1;
+            EndBody.
+            Function: foo2
+            Body:
+                Return 2;
+            EndBody.
+            Function: foo3
+            Parameter: x,y,z[123]
+            Body:
+                Return 3;
+            EndBody.
         

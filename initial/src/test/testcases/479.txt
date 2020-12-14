@@ -1,2 +1,25 @@
-Function: a Parameter: a Body:Var: a=False;EndBody. Function: b Body:EndBody.
-Function: main**Here some too**Parameter: d Body:EndBody.
+
+        Function: foo
+        Parameter: f
+        Body:
+            Return 0;
+        EndBody.
+        Function: main
+        Body:
+            Var: i, j, k, l, n;
+            Do 
+                i = i + 1;
+                While (j < 100) Do
+                    Do
+                        k = k + 1;
+                        While (l < 100) Do
+                            l = l + 2;
+                            n = l \ 2;
+                        EndWhile.
+                    While (k < 100) EndDo.
+                    j = j + 3;
+                EndWhile.
+            While (i + j + k + l < foo(2)) EndDo.
+            print(n);
+        EndBody.
+                   

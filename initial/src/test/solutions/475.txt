@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Assign(ArrayCell(CallExpr(Id(foo),[]),[IntLiteral(0)]),IntLiteral(1))
+Type Mismatch In Expression: CallExpr(Id(foo),[Id(x1),IntLiteral(5),IntLiteral(10),IntLiteral(15),IntLiteral(20)])

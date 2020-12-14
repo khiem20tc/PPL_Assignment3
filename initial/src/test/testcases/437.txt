@@ -1,14 +1,10 @@
 
-        Var: a,d;
-        Function: foo
-        Parameter: x,y,z
-        Body:
-        Var: b;
-        a=x+2;
-        EndBody.
-        Function: main
-        Body:
-        Var: c;
-        foo(1,2,d);
-        EndBody.
+            Function: main
+            Body:
+                Var: index = 1;
+                For(index = 2, index <= 100, index) Do
+                    Var: i = 1;
+                    Var: i = 1.1;
+                EndFor.
+            EndBody.
         

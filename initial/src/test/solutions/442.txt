@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(foo),[StringLiteral(string)])
+Type Mismatch In Statement: Return(IntLiteral(1))

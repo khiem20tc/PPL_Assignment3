@@ -1,8 +1,15 @@
 
-        Var: a,b,c;
-        Function: main
-        Body:
-        Var: x,y;
-        Return 1;
-        EndBody.
+            Function: main
+            Body:
+                Var: x , y , z;
+                If(x) Then
+                    x = False;
+                Else
+                    y = x;
+                    If(y) Then
+                        z = y;
+                    EndIf.
+                EndIf.
+                z = 1;
+            EndBody.
         

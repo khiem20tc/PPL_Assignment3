@@ -1,7 +1,16 @@
-Function: main 
+
+        Function: main
         Body:
-        Var: n;
-            If n == 0 Then
-                Break;
+            Var: a = 3, b = 4, c = 5;
+            If (a < b + c) && ( b < a + c) && ( c < a + b) Then
+                If (a*a==b*b+c*c) || (b*b==a*a+c*c) || (c*c== a*a+b*b) Then
+                    print("Day la tam giac vuong");
+                EndIf.
+            ElseIf (a==b) && (b==c) Then print("Day la tam giac deu");
+            ElseIf (a==b) || (a==c) || (b==c) Then print("Day la tam giac can");
+            ElseIf (a*a > b*b+c*c) || (b*b > a*a+c*c) || (c*c > a*a+b*b) Then print("Day la tam giac tu");
+            Else print("Day la tam giac nhon");
             EndIf.
+            Return main();
         EndBody.
+        

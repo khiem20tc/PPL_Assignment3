@@ -1,40 +1,13 @@
 
-        Function: func2 
-        Parameter: n
-        Body: 
-            If n == 0 Then
-                Return 1;
-            Else
-                Return n * func2 (n - 1);
-            EndIf.
-        EndBody.
-        Function: goo 
-        Parameter: n
-        Body: ** Xin chao**
-        Var: string = "Xin chao";
-        Return 108;
-        EndBody.
-        Function: main
+        Function: main1
+        Parameter: main
         Body:
-        Var: a;
-            a =func1(func2(3))+23 - foo(goo(func1(a)));
+            main = "main";
+            Return main;
         EndBody.
-        Function: func1
-        Parameter: x
+        Function: main2
+        Parameter: main
         Body:
-        Var: a, b, c;
-            If(x == ((False||True) && (a > b + c))) Then
-                a = b - c;
-            Else
-                a = b + c;
-                x = True;
-            EndIf.
+            Return 0;
         EndBody.
-        Function: foo 
-        Parameter: n
-        Body: 
-            While(1) Do
-                n = True;
-            EndWhile.
-        EndBody.
-        
+                   

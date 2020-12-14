@@ -1,9 +1,15 @@
 
         Function: main
+        Parameter: x
         Body:
-            foo()[0] = 1;
+            Var: t, x1;
+            t = 1 + foo(main(x +. 2.5) \. 68.21, 2, 3, 4, 5);
+            x1 = foo(x,91,36,42,59);
+            x1 = foo(x1, 5, 10, 15, 20);
+            Return 0;
         EndBody.
-
         Function: foo
+        Parameter: f1, f2, f3, f4, f5
         Body:
         EndBody.
+                   

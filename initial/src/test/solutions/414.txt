@@ -1,1 +1,1 @@
-No Entry Point
+Type Cannot Be Inferred: CallExpr(Id(foo),[ArrayCell(Id(z),[IntLiteral(5)])])

@@ -1,1 +1,1 @@
-Type Cannot Be Inferred: Assign(Id(c),Id(a))
+Type Mismatch In Statement: Return(IntLiteral(1))
