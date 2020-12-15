@@ -1,15 +1,7 @@
 
-            Function: main
-            Body:
-                Var: x;
-                If(x) Then
-                    Var: y = True;
-                    y = foo()[1];
-                EndIf.
-            EndBody.
-
-            Function: foo
-            Body:
-                Return {1,2,3};
-            EndBody.
+        Var: a,b=1;
+        Function: main
+        Body:
+        b = -a;
+        EndBody.
         

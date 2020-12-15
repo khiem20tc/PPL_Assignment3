@@ -1,6 +1,16 @@
 
-        Var: a={1,"str",3.2,{1,2}};
-        Function: main
-        Body:
-        EndBody.
+            Function: main
+            Body: 
+                Var: a , b = 1, i = 1;
+                For (i=1, i<10, a\2) Do
+                Var: c;
+                a = a + 1;
+                EndFor.
+                a = a -. 0.5;
+            EndBody.
+            Function: foo
+            Parameter: x
+            Body:
+            EndBody.
+
         

@@ -1127,11 +1127,11 @@ class CheckSuite(unittest.TestCase):
             Var: z, y;
             z = 1 + main(-(2 + main(2)));
             z = y + x;
-            y = -(y\z) + -x + float_to_int(main(1));
+            y = -(y\z) + -x + float_of_int(main(1));
             Return 0;
         EndBody.
                    """
-        expect = str(TypeMismatchInExpression(BinaryOp("+",BinaryOp("+",UnaryOp("-",BinaryOp("\\",Id("y"),Id("z"))),UnaryOp("-",Id("x"))),CallExpr(Id("float_to_int"),[CallExpr(Id("main"),[IntLiteral(1)])]))))
+        expect = str(TypeMismatchInExpression(BinaryOp("+",BinaryOp("+",UnaryOp("-",BinaryOp("\\",Id("y"),Id("z"))),UnaryOp("-",Id("x"))),CallExpr(Id("float_of_int"),[CallExpr(Id("main"),[IntLiteral(1)])]))))
         self.assertTrue(TestChecker.test(input,expect,474))
 
     def test_type_missmatch_in_exp8(self):
@@ -1222,10 +1222,10 @@ class CheckSuite(unittest.TestCase):
                     j = j + 3;
                 EndWhile.
             While (i + j + k + l < foo(2)) EndDo.
-            print(n);
+            printLn(n);
         EndBody.
                    """
-        expect = str(TypeMismatchInStatement(CallStmt(Id("print"),[Id("n")])))
+        expect = str(TypeMismatchInStatement(CallStmt(Id("printLn"),[Id("n")])))
         self.assertTrue(TestChecker.test(input,expect,479))
 
     def test_full_program2(self):

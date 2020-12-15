@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(float_of_string),[ArrayCell(Id(arr),[IntLiteral(2),IntLiteral(1)])])
+Type Mismatch In Expression: BinaryOp(+,BinaryOp(+.,Id(b),Id(g)),FloatLiteral(1.0))

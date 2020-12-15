@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(+,Id(a),IntLiteral(1))
+Type Mismatch In Statement: Assign(Id(a),BooleanLiteral(true))

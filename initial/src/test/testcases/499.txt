@@ -1,9 +1,18 @@
 
-        Var: arr[3][5];
-        Function: main
-        Parameter: x, y, z
-        Body:
-            arr[2][1] = "2.41";
-            arr[1*y][2*z] = x +. main(float_of_string(arr[2][1]), 3, 2);
-        EndBody.
-        
+            Var: b = 10;
+            Var: c;
+            Var: e;
+            Var: f,g;
+            Function: foo
+            Body:
+               
+            EndBody.
+            
+            Function: main
+            Body:
+            Var : b = 1.0;
+            g = 1.0;
+            f = b +. g + 1.0;
+            EndBody.
+            
+            

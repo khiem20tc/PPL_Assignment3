@@ -1,27 +1,14 @@
 
-            Function: foo
-            Body:
-                Return 1;
-            EndBody.
-
-            Function: goo
-            Body:
-                Return 1.1;
-            EndBody.
-
-            Function: main
-            Body:
-                Var: x;
-                For (x = 1, x == foo() , 1) Do
-                    While x == 2 Do
-                        Var: z;
-                        x = foo();
-                        Do 
-                            z = goo();
-                        While z <= 1
-                        EndDo.                        
-                    EndWhile.
-                EndFor.
-            EndBody.
-
+        Var: a,d;
+        Function: foo
+        Parameter: x,y,z
+        Body:
+        Var: b;
+        a=x+2;
+        EndBody.
+        Function: main
+        Body:
+        Var: c;
+        foo(1,2,d);
+        EndBody.
         

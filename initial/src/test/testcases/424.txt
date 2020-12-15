@@ -1,15 +1,9 @@
 
-            Var: a;
-            Function: main
-            Body:
-                Var: x;
-                If (x == 1) Then
-                    a = 2;
-                EndIf.
-            EndBody.
-
-            Function: foo
-            Body:
-                a = 1.1;
-            EndBody.
+        Function: main
+        Body:
+        Var: x=0, i;
+        For (i=1, i+2, **test comment** 1) Do
+            Break;
+        EndFor.
+        EndBody.
         

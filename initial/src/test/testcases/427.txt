@@ -1,15 +1,7 @@
 
-            Function: main
-            Body:
-                Var: x = False, y;
-                If(x) Then
-                    Var: x;
-                    x = 1;
-                ElseIf(x) Then
-                    Var: x;
-                    x = 1.1;
-                    y = x;
-                EndIf.
-                y = 1;
-            EndBody.
+        Var: a,b=1;
+        Function: main
+        Body:
+        a = a + b;
+        EndBody.
         

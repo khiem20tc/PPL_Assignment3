@@ -1,23 +1,12 @@
-
-        Var: x, y;
-        Function: main
+Function: main
+        Parameter: n
         Body:
-            Var: i = 20, a, b, c;
-            If i == 10 Then 
-                a = 1;
-                b = 2;
-                c = a + b;
-                x = c;
-            ElseIf i == 15 Then
-                a = 3;
-                b = 4;
-                c = b - a;
-            ElseIf i == 20 Then
-                a = 2;
-                b = 2;
-                c = a*2 + b*3;
-            EndIf.
-            y = (x+a)*(x+b)*(x+.2.);
-            Return 0;
+        Var:factorial=1;
+        print("Enter integer: ");
+        read();
+        For (i=0, i<=n, 1) Do
+            factorial=factorial*i;
+        EndFor.
+        printStrLn(string_of_int(factorial));
+        Return factorial;
         EndBody.
-        

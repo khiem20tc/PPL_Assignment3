@@ -1,15 +1,9 @@
 
         Function: main
-        Parameter: x
         Body:
-            Var: arr[10][10];
-            Var: i, j;
-            For (i = 0, i < 10, 1) Do  
-                For (j = 0, j < 10, 1) Do
-                    arr[i][j] = 0;
-                EndFor.
+        Var: i = 0, a;
+            For (i = 0, i < 10, 2) Do
+                a= int_of_float(float_of_string(read()));
+                Return a;
             EndFor.
-            x = -.arr[2][2];
-            Return 0;
         EndBody.
-        

@@ -1,22 +1,13 @@
 
-        Var: x[2][3] = {{3.,4.,2.51},{12e2,12e1,6e5}};
-        Function: main
-        Parameter: s1, s2
-        Body:
-            main(1., True);
-            x = foo(s1, s2);
-            Return;
-        EndBody.
+        Var: main;
         Function: foo
-        Parameter: s1, s2
         Body:
-            Var: y[2][3];
-            If True Then
-                Return y;
-            ElseIf False Then
-                Return x;
-            Else
-                Return foo(x,2);
+            Var: num = 10;
+            If num > 0 Then print("Positive number");
+            Else 
+                If num == 0 Then print("Zero");
+                Else print("Negative number");
+                EndIf.
             EndIf.
         EndBody.
         

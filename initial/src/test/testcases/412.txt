@@ -1,8 +1,10 @@
-
-            Function: main
-            Parameter: x , y[2]
-            Body:
-                y[1] = 1.1;
-                y[2] = 1;
-            EndBody.
+Var: a,b;
+        Function: x
+        Body:
+        Var: m,n;
+        EndBody.
+        Function: main
+        Body:
+        Var: q,w;
+        EndBody.
         

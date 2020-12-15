@@ -1,1 +1,0 @@
-Type Mismatch In Statement: For(Id(i),IntLiteral(0),BinaryOp(<,Id(i),IntLiteral(10)),IntLiteral(1),[],[For(Id(j),IntLiteral(0),BinaryOp(<,Id(j),IntLiteral(10)),IntLiteral(1),[],[Assign(ArrayCell(Id(arr),[Id(i),Id(j)]),IntLiteral(0))])])

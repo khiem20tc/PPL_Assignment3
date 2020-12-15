@@ -1,15 +1,12 @@
 
-        Function: main
-        Parameter: x
+        Function: main **1 + 2 + ... n < max**
+        Parameter: max
         Body:
-            Var: t, x1;
-            t = 1 + foo(main(x +. 2.5) \. 68.21, 2, 3, 4, 5);
-            x1 = foo(x,91,36,42,59);
-            x1 = foo(x1, 5, 10, 15, 20);
-            Return 0;
+            Var: n = 0, s = 0;
+            Do 
+                n = n + 1;
+                s = s + n;
+            While s + n + 1 < max EndDo.
+            writeln(n);
         EndBody.
-        Function: foo
-        Parameter: f1, f2, f3, f4, f5
-        Body:
-        EndBody.
-                   
+        

@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(foo),[ArrayLiteral(IntLiteral(3)),BooleanLiteral(true)])
+Type Mismatch In Statement: If(BinaryOp(-,IntLiteral(5),Id(a)),[],[])Else([],[])

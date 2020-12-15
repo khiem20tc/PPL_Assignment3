@@ -1,1 +1,1 @@
-Undeclared Function: writeln
+Type Mismatch In Expression: BinaryOp(+.,BinaryOp(*,Id(i),Id(i)),FloatLiteral(1.5))

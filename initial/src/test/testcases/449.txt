@@ -1,15 +1,8 @@
 
-            Var: x;
-            Function: main
-            Body:
-            Var: y,z;
-                x = 1;
-                While x >= 2 Do
-                    Var:x = 2.2,result;
-                    If x =/= 2.2 Then
-                        result = "Some thing went wrong!";
-                    EndIf.
-                    x = x + 1;
-                EndWhile.
-            EndBody.
+        Var: y;
+        Function: main
+        Parameter: a,x
+        Body:
+        Var: y,x;
+        EndBody.
         

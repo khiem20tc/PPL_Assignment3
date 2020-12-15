@@ -1,12 +1,8 @@
 
-        Function: main **1 + 2 + ... n < max**
-        Parameter: max
+        Function: main
         Body:
-            Var: n = 0, s = 0;
-            Do 
-                n = n + 1;
-                s = s + n;
-            While s + n + 1 < max EndDo.
-            writeln(n);
+        Var: i , x;
+            For (i = 1, i <= x*x,i*i+.1.5)
+            Do x=x+1;
+            EndFor.
         EndBody.
-        

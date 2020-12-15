@@ -1,16 +1,16 @@
 
             Function: main
             Body:
-                Var: a , b = 1, i = 1;
-                For (i=1, i<10, a\2) Do
-                Var: c;
+                Var: a , b = 1;
+                If b==1 Then
+                a = a +. 0.5;
+                ElseIf b!=1 Then
+                a = 0.2;
+                Else
+                Var: c=3;
                 a = a + 1;
-                EndFor.
-                a = a -. 0.5;
-            EndBody.
-            Function: foo
-            Parameter: x
-            Body:
+                EndIf.
+                a = a - 1;
             EndBody.
 
         

@@ -1,14 +1,7 @@
-
-            Function: main
-            Body:
-                Var:x = 1,a;
-                foo(x);
-                a = foo_goo();
-            EndBody.
-
-            Function: foo
-            Parameter: x
-            Body:
-                Return ;
-            EndBody.
+Var: a,c;
+        Function: main
+        Parameter: a,x,y
+        Body:
+        a=m;
+        EndBody.
         

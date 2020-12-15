@@ -1,13 +1,17 @@
 
-        Var: main;
-        Function: foo
-        Body:
-            Var: num = 10;
-            If num > 0 Then print("Positive number");
-            Else 
-                If num == 0 Then print("Zero");
-                Else print("Negative number");
-                EndIf.
-            EndIf.
-        EndBody.
-        
+        Var: x;
+        Function: main
+            Parameter: j, brr[1000]
+            Body:
+                Var: x=0,i;
+                For (i=0,True,i) Do
+                    Var:x=1;
+                    Do
+                        Var:x=2;
+                    While1==0
+                    EndDo.
+                    IfTrueThen
+                        Var:x=3;
+                    EndIf.
+                EndFor.
+            EndBody.

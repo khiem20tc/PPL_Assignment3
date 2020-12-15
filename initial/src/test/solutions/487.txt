@@ -1,1 +1,1 @@
-Undeclared Function: print
+Undeclared Function: goo

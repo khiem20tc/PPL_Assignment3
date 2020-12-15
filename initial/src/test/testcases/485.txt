@@ -1,17 +1,23 @@
 
-        Var: x;
-        Function: fact
-        Parameter: n
-        Body:
-            If n == 0 Then
-                Return 1;
-            Else
-                Return n * fact (n - 1);
-            EndIf.
-        EndBody.
+        Var: x, y;
         Function: main
         Body:
-            x = 10;
-            fact(x);
+            Var: i = 20, a, b, c;
+            If i == 10 Then 
+                a = 1;
+                b = 2;
+                c = a + b;
+                x = c;
+            ElseIf i == 15 Then
+                a = 3;
+                b = 4;
+                c = b - a;
+            ElseIf i == 20 Then
+                a = 2;
+                b = 2;
+                c = a*2 + b*3;
+            EndIf.
+            y = (x+a)*(x+b)*(x+.2.);
+            Return 0;
         EndBody.
         

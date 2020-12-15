@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Assign(Id(y),FloatLiteral(1.1))
+Undeclared Function: fo

@@ -1,15 +1,8 @@
 
-            Function: main
-            Body:
-                Var: a = 2,x;
-                Var: z[5] = {1,2,3,4,5};
-                If(a == 2) Then
-                    x = 1;
-                ElseIf (a == 3) Then
-                    x = 2;
-                ElseIf (a == 3) Then
-                    x = z[1];
-                Else x = 2.1;
-                EndIf.
-            EndBody.
+        Function: main
+        Body:
+        Var: x=3;
+        If x>1 Then x=x-1;
+        EndIf.
+        EndBody.
         

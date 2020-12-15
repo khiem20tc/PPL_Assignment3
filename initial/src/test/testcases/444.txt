@@ -1,20 +1,5 @@
-
-            Function: findMaxInt
-            Parameter: a[4]
-            Body:
-                Var: i = 0, result = 1;
-                result = a[0];
-                While(i <= 3) Do
-                    If result < a[i] Then
-                        result = a[i];
-                    EndIf.
-                    i = i + 1;
-                EndWhile.
-                Return result;
-            EndBody.
-            Function: main
-            Body:
-                Var: arr[4] = {1,2,3,4},result;
-                result = findMaxInt(arr);
-            EndBody.
+Var: a,b,c;
+        Function: c
+        Body:
+        EndBody.
         

@@ -1,1 +1,1 @@
-Type Mismatch In Statement: If(BinaryOp(+,Id(a),IntLiteral(1)),[],[Assign(Id(a),BooleanLiteral(false))])Else([],[])
+Type Mismatch In Statement: Assign(Id(a),CallExpr(Id(foo),[FloatLiteral(1.0),FloatLiteral(2.0)]))

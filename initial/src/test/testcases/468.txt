@@ -5,10 +5,7 @@
                 If b==1 Then
                 a = a +. 0.5;
                 ElseIf b!=1 Then
-                a = 0.2;
-                Else
-                Var: c=3;
-                a = a + 1;
+                a = True;
                 EndIf.
                 a = a - 1;
             EndBody.

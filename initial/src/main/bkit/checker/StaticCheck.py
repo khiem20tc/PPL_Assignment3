@@ -57,7 +57,7 @@ class StaticChecker(BaseVisitor):
         self.ast = ast
         self.global_envi = [
 Symbol("int_of_float",MType([FloatType()],IntType())),
-Symbol("float_of_int",MType([IntType()],FloatType())),
+Symbol("float_to_int",MType([IntType()],FloatType())),
 Symbol("int_of_string",MType([StringType()],IntType())),
 Symbol("string_of_int",MType([IntType()],StringType())),
 Symbol("float_of_string",MType([StringType()],FloatType())),
@@ -65,6 +65,7 @@ Symbol("string_of_float",MType([FloatType()],StringType())),
 Symbol("bool_of_string",MType([StringType()],BoolType())),
 Symbol("string_of_bool",MType([BoolType()],StringType())),
 Symbol("read",MType([],StringType())),
+Symbol("print",MType([StringType()],VoidType())),
 Symbol("printLn",MType([],VoidType())),
 Symbol("printStr",MType([StringType()],VoidType())),
 Symbol("printStrLn",MType([StringType()],VoidType()))]                           
@@ -517,11 +518,17 @@ Symbol("printStrLn",MType([StringType()],VoidType()))]
         return o
     
     def visitIf(self, ast, o):
-        if type(ast.ifthenStmt[0][0]) != Id: 
-            if type(self.visit(ast.ifthenStmt[0][0],o)) != BoolType:
-                raise TypeMismatchInStatement(ast)
-        else:
+        # if type(ast.ifthenStmt[0][0]) != Id: 
+        #     if type(self.visit(ast.ifthenStmt[0][0],o)) != BoolType:
+        #         raise TypeMismatchInStatement(ast)
+        # else:
+        #     self.updateType(ast.ifthenStmt[0][0].name,BoolType(),o)
+        type_cond_expr = self.visit(ast.ifthenStmt[0][0],o)
+        if (type(type_cond_expr) == Unknown):
             self.updateType(ast.ifthenStmt[0][0].name,BoolType(),o)
+            type_cond_expr = BoolType()
+        if (type(type_cond_expr)!=BoolType):
+            raise TypeMismatchInStatement(ast)
         new_outer = o[1]
         for x in o[0]:
             new_outer.append(x)
@@ -586,11 +593,17 @@ Symbol("printStrLn",MType([StringType()],VoidType()))]
         return o
     
     def visitDowhile(self, ast, o):
-        if type(ast.exp) != Id: 
-            if type(self.visit(ast.exp,o)) != BoolType:
-                raise TypeMismatchInStatement(ast)
-        else:
+        # if type(ast.exp) != Id: 
+        #     if type(self.visit(ast.exp,o)) != BoolType:
+        #         raise TypeMismatchInStatement(ast)
+        # else:
+        #     self.updateType(ast.exp.name,BoolType(),o)
+        type_cond_expr = self.visit(ast.exp,o)
+        if (type(type_cond_expr) == Unknown):
             self.updateType(ast.exp.name,BoolType(),o)
+            type_cond_expr = BoolType()
+        if (type(type_cond_expr)!=BoolType):
+            raise TypeMismatchInStatement(ast)
         new_outer = o[1]
         for x in o[0]:
             new_outer.append(x)

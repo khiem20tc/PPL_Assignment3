@@ -1,4 +1,4 @@
-Function: main  
-                   Body:
+Function: main
+                Body:
                         printStrLn();
-                    EndBody.
+                EndBody.

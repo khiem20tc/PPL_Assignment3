@@ -1,25 +1,17 @@
 
-        Function: foo
-        Parameter: f
+        Var: x;
+        Function: fact
+        Parameter: n
         Body:
-            Return 0;
+            If n == 0 Then
+                Return 1;
+            Else
+                Return n * fact (n - 1);
+            EndIf.
         EndBody.
         Function: main
         Body:
-            Var: i, j, k, l, n;
-            Do 
-                i = i + 1;
-                While (j < 100) Do
-                    Do
-                        k = k + 1;
-                        While (l < 100) Do
-                            l = l + 2;
-                            n = l \ 2;
-                        EndWhile.
-                    While (k < 100) EndDo.
-                    j = j + 3;
-                EndWhile.
-            While (i + j + k + l < foo(2)) EndDo.
-            print(n);
+            x = 10;
+            fact(x);
         EndBody.
-                   
+        

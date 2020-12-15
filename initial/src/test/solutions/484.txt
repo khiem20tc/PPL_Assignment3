@@ -1,1 +1,1 @@
-Type Cannot Be Inferred: CallExpr(Id(foo),[Id(s1),Id(s2)])
+No Entry Point

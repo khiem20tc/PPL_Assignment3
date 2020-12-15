@@ -1,22 +1,8 @@
 
-            Function: foo
-            Body:
-                Return 1;
-            EndBody.
-
-            Function: main
-            Body:
-                Var: z , y  , x;
-                While z >= foo() Do
-                    Var: y;
-                    y = 1;
-                    x = y;
-                EndWhile.
-                If (y >=. 1.1) Then
-                    z = foo();
-                    Do x = "This is String";
-                    While z >= foo()
-                    EndDo.
-                EndIf.
-            EndBody.
+        Function: main
+        Parameter: x,y,z
+        Body:
+        Var: b;
+        Var: b;
+        EndBody.
         

@@ -1,4 +1,4 @@
 Function: main
-                   Body: 
+                   Body:
                         foo();
                    EndBody.

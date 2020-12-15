@@ -1,13 +1,24 @@
 
-        Function: main1
-        Parameter: main
+        Var: s, arr;
+        Function: combat
+        Parameter: s1, s2
         Body:
-            main = "main";
-            Return main;
+            Var: x, y, z;
+            If z Then
+                Var: y;
+                x = 1;
+                y = 2;
+            Else
+                x = y;
+                s = z;
+            EndIf.
+            Return;
         EndBody.
-        Function: main2
-        Parameter: main
+        Function: main
         Body:
+            Var: m1, m2;
+            arr = s;
+            m1 = s;
+            m2 = arr;
             Return 0;
-        EndBody.
-                   
+        EndBody. 

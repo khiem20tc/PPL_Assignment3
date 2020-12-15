@@ -1,1 +1,1 @@
-Undeclared Function: float_to_int
+Type Mismatch In Expression: BinaryOp(+,FloatLiteral(10.0),IntLiteral(10))

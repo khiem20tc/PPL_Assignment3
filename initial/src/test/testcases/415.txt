@@ -1,19 +1,11 @@
-
-            Function: foo
-            Parameter: x
-            Body:
-                x = 2.2;
-                Return 1;
-            EndBody.
-
-            Function: main
-            Body:
-                Var: a;
-                a = foo(goo());
-            EndBody.
-
-            Function: goo
-            Body:
-                Return 2;
-            EndBody.
+Var: a,b;
+        Function: hi
+        Parameter: a,y
+        Body:
+        Var: x;
+        EndBody.
+        Function: hi
+        Body:
+        Var: k;
+        EndBody.
         

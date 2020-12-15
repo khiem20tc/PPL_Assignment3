@@ -1,12 +1,20 @@
 
-        Var: a[2][2] = {{3,4},{1,2}};
-        Function: main
-        Body:
-            a = foo();
-            Return int_of_float(float_to_int(foo()[1][1]));
-        EndBody.
-        Function: foo
-        Body:
-            Return;
-        EndBody.
-        
+            Var: b = 10;
+            Var: c;
+            Var: e;
+            Var: f,g;
+            Function: foo
+            Body:
+                **b =  e =/= c;**
+                c = !e;
+            EndBody.
+            
+            Function: main
+            Body:
+            Var : b = 1.0;
+            g = 1.0;
+            **f = b +. g + 1.0;**
+            f = 10.0 + 10;
+            EndBody.
+            
+            

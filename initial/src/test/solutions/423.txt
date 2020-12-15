@@ -1,1 +1,0 @@
-Type Mismatch In Statement: Assign(Id(z),ArrayCell(CallExpr(Id(goo),[]),[IntLiteral(1)]))

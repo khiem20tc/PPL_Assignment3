@@ -1,11 +1,15 @@
 
-        Var: abc[2][2][3];
-        Function: main
+        Function: foo
         Body:
-            Var: athos = 500, pothos = 900, jerry, tom = 200;
-            If (pothos - athos) < 400 Then jerry = pothos - tom;
-            Else jerry = athos - tom;
-            EndIf.
-            Return abc;
+            Var: c="hihi";
+            Return c;
         EndBody.
-        
+        Function: main 
+        Body:
+        Var: i;
+            For (i=0, i!=9, i) Do
+                If i==10 Then Continue;
+                EndIf.
+                foo(1);
+            EndFor.
+        EndBody.

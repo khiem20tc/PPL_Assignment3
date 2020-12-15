@@ -1,11 +1,5 @@
-
-            Function: foo
-            Body:
-                Return 1;
-            EndBody.
-            Function: main
-            Body:
-                Var: x = 1, y[5] = {1,2,3,4,5};
-                x = y;
-            EndBody.
+Var: a,b;
+        Function: x
+        Body:
+        EndBody.
         

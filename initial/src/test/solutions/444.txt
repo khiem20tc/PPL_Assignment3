@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(<,Id(result),ArrayCell(Id(a),[Id(i)]))
+Redeclared Function: c

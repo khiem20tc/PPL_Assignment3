@@ -1,16 +1,10 @@
 
-            Function: main
-            Body:
-                Var:x;
-                For (x = 1, x == foo() , 1) Do
-                    Var: y = 1;
-                    If (x == 1) Then x = 2;
-                    ElseIf(x==2) Then y = 1.1;
-                    EndIf.
-                EndFor.
-            EndBody.
-            Function: foo
-            Body:
-                Return 1;
-            EndBody.
+        Function: foo
+        Parameter: x,y
+        Body:
+        EndBody.
+        Function: main
+        Body:
+        fo(1,2);
+        EndBody.
         

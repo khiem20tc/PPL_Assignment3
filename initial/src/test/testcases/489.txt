@@ -1,25 +1,8 @@
-
-        Var: s = "ppL2020";
-        Function: fibonacci
-        Parameter: n
+Function: main
         Body:
-            If (n == 1) || (n == 2) Then
-                Return 1;
-            EndIf.
-            Return fibonacci(n - 1) + fibonacci(n - 2);
-        EndBody.
-        Function: adventure
-        Parameter: nEvents
-        Body:
-            Var: i;
-            For (i = 0, i < nEvents, 1) Do
-                If i == nEvents \ 5 Then 
-                    Return fibonacci(int_of_float(2222.1));
+        Var:i=0;
+            For (i=0, i!=9, (i*.2.0)) Do
+                If i>=10 Then Break;
                 EndIf.
             EndFor.
         EndBody.
-        Function: main
-        Body:
-            adventure(1023);
-        EndBody.
-        

@@ -1,1 +1,1 @@
-Type Cannot Be Inferred: Assign(Id(x),CallExpr(Id(main),[ArrayCell(Id(abc),[CallExpr(Id(main),[IntLiteral(23)]),CallExpr(Id(main),[IntLiteral(33)]),CallExpr(Id(main),[IntLiteral(44)]),CallExpr(Id(main),[IntLiteral(55)]),CallExpr(Id(main),[Id(x)])])]))
+Type Mismatch In Statement: CallStmt(Id(foo),[IntLiteral(1),IntLiteral(2)])

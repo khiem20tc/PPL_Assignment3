@@ -1,12 +1,22 @@
 
-        Var: abc[12][22][33][44][55];
-        Function: main
-        Parameter: max
-        Body:
-            Var: x;
-            max = 1;
-            x = main(abc[main(23)][main(33)][main(44)][main(55)][main(x)]);
-            x = 2.0;
-            Return 0;
-        EndBody.
-        
+            Var: a;
+            Function: foo
+            Parameter: a,b
+            Body:
+                a = 10;
+                b = 10.0;
+                **Var: a = 10;**
+                **x = a  + main() + foo1();**
+                main(1,2,"string");
+                Return 1;
+            EndBody.
+            
+            Function: main
+            Parameter: a,b,c
+            Body:
+            
+                foo(1,2);
+                Return ;
+            EndBody.
+            
+            

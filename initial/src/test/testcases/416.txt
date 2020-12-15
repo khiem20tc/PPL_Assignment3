@@ -1,14 +1,10 @@
 
-            Function: foo
-            Parameter: x[5]
-            Body:
-                Var: a;
-                a = 1 + 2 + 3 + 4;
-                Return ;
-            EndBody.
-            Function: main
-            Body:
-                Var:x ;
-                x = foo(x);
-            EndBody.
+        Function: main
+        Parameter: a,x,y
+        Body:
+        Var: k,l;
+        k=2;
+        l="string";
+        k=l;
+        EndBody.
         

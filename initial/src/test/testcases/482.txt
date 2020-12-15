@@ -1,15 +1,17 @@
 
-        Var: x[2][3][4], y[22];
-        Function: foo
-        Parameter: s1, s2
-        Body:
-            Var: x;
-            x = s1 + s2 + foo(s1, s2);
-            Return x;
-        EndBody.
+        Var: abc = "string";
         Function: main
+        Parameter: x
         Body:
-            main();
-            foo()[10] = 2;
-            Return;
-        EndBody. 
+            Var: athos = 500, pothos = 900, jerry, tom = 200;
+            If (pothos - athos) < 400 Then jerry = pothos - tom;
+            Else jerry = athos - tom;
+            EndIf.
+            Return x + abc;
+        EndBody.
+        Function: go
+        Body:
+        Var: a;
+        a = main(2) +1;
+        EndBody.
+        

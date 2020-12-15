@@ -1,14 +1,2 @@
-
-            Function: main
-            Body:
-                Var: x,y[3]={1.1,2.2,3.3},result;
-                While x == 1 Do
-                    Var: y;
-                    If x == 1 Then
-                        y = 1.1;
-                    EndIf.
-                    result = x;
-                EndWhile.
-                y[0] = result;
-            EndBody.
-        
+Var: b,c,a;
+        Var: d,e,f,b;

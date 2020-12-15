@@ -1,9 +1,13 @@
 
-            Function: main
-            Body:
-                Var: x = 1;
-                For(x=2,x<=.1,x) Do
-                    x = 123;
-                EndFor.
-            EndBody.
+        Var: a;
+        Function: foo
+        Parameter: x,y,z
+        Body:
+        Var: b;
+        EndBody.
+        Function: main
+        Body:
+        Var: c;
+        foo(1,2,3);
+        EndBody.
         

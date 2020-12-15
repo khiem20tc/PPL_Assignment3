@@ -1,13 +1,13 @@
 
-        Function: foo
-        Parameter: e[1], f
-        Body:
-            e[0] = True;
-        EndBody.
+        Var: a = 10;
         Function: main
-        Parameter: x
         Body:
-            x = foo({3}, True);
-            Return 0;
+            Var: x;
+            If x Then
+                While x Do
+                    If 5 - a Then
+                    EndIf.
+                EndWhile.
+            EndIf.
         EndBody.
                    

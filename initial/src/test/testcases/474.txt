@@ -1,6 +1,16 @@
 
-            Var: a[3] = {1,2,3};
-            Funtion: main
+            Function: main
             Body:
+                Var: a , b = 1;
+                If b==1 Then
+                a = a +. 0.5;
+                ElseIf b!=1 Then
+                a = 0.2;
+                Else
+                Var: c=3;
+                a = a + 1;
+                EndIf.
+                a = a - 1;
             EndBody.
+
         
